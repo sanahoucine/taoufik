@@ -15,13 +15,13 @@ import {RouterLink, RouterLinkActive, RouterModule} from '@angular/router';
 export default class HeaderComponent{
     @Input() links = [
         {
-          name: 'الصفحة الرئيسية',
+          name: 'Home',
           routerLink: '/Home',
           routerLinkActive: 'active',
           routerLinkActiveOptions: '{ exact: true }',
         },
         {
-          name: ' مبتدأ في التجويد ',
+          name: 'Blogs',
           routerLink: '/mobtada',
           routerLinkActive: 'active',
         },

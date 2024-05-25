@@ -167,7 +167,7 @@
     outline: 0;
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
-    color: inherit;
+    color: #1791C8;
     box-sizing: border-box;
  
     &:focus {
@@ -206,7 +206,7 @@
  
     &__link {
        letter-spacing: 1px;
-       font-size: 14px;
+       font-size: 20px;
        margin-left: 20px;
        font-weight: 600;
        box-shadow: inset 0px -10px 0px rgba(white, 0.5);
@@ -216,7 +216,8 @@
        
        &:hover {
          transform: translateY(-5px);
-         box-shadow: inset 0px -20px 0px white; 
+         box-shadow: inset 0px -30px 0px #a4a4a483; 
+    
        }
     }
  
