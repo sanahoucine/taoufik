@@ -1,0 +1,100 @@
+$white: #ffffff;
+$black: #252525;
+$primary1: #1cbbb4;
+$primary2: #1a2e35;
+$btnColor: #ff4f5a;
+$color: #000; 
+
+@mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    border-radius: $bRadius;
+  
+    &:hover {
+      background-color: transparent;
+      border-color: $col1;
+      color: $col1;
+    }
+  }
+  
+  @mixin upperBold {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+.container {
+    text-align: center;
+    color: var(--color);
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/2.png);
+    background-size: cover;
+    background-position: center;
+    
+  /*  this is where the magic happens:  */
+    background-attachment: fixed;
+  }
+  .card{
+    background-color: #ffffff;
+  }
+
+// experience section
+.experience_section {
+  .row {
+    align-items: center;
+  }
+
+  .detail-box {
+    p {
+      margin-top: 20px;
+    }
+
+    .btn-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 45px -5px 0 -5px;
+
+      a {
+        text-align: center;
+        width: 165px;
+        font-size: 15px;
+        margin: 5px;
+      }
+
+      .btn-1 {
+        @include hero_btn($btnColor, $white, 10px, 0, 0);
+      }
+      a {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding: 1em 3.5em;
+        background-color: $color;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 0.3em;
+        font-weight: 700;
+        letter-spacing: .5px;
+        font-size: .875rem;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .img-box {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// end experience section

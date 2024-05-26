@@ -1,0 +1,90 @@
+$white: #ffffff;
+$btnColor: #ff4f5a;
+
+$color: #000; 
+
+@mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    border-radius: $bRadius;
+  
+    &:hover {
+      background-color: transparent;
+      border-color: $col1;
+      color: $col1;
+    }
+  }
+  
+  @mixin upperBold {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+.blank,
+.other {
+  width: 100%;
+  min-height: 50vh;
+  background-color: $white;
+}
+/* footer section */
+
+.footer_section_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    color:  $color;
+      .column {
+        flex: 1;
+        margin: 10px;
+        min-width: 150px; // Ensure columns don't get too narrow
+      }
+    }
+  
+    p {
+      color: $color;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    a {
+      color: $color;
+    }
+  }
+  
+  /* end footer section */
+  
+  
+/* footer section*/
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  $color;
+  }
+  
+  .footer_section p {
+    color: $white;
+    margin: 0;
+    padding: 25px 0 20px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer_section a {
+    color: $white;
+  }
+  
+  /* end footer section*/

@@ -20,9 +20,27 @@ export default class HeaderComponent{
           routerLinkActive: 'active',
           routerLinkActiveOptions: '{ exact: true }',
         },
+          
+        {
+          name: 'About',
+          routerLink: '/about',
+          routerLinkActive: 'active',
+        },
+          
+        {
+          name: 'Projects',
+          routerLink: '/projects',
+          routerLinkActive: 'active',
+        },
         {
           name: 'Blogs',
-          routerLink: '/mobtada',
+          routerLink: '/blogs',
+          routerLinkActive: 'active',
+        },
+          
+        {
+          name: 'Contact',
+          routerLink: '/contact',
           routerLinkActive: 'active',
         },
     ]
